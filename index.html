@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Plants</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logo.svg">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inika&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <header class="header-content">
+        <div class="logo-part">
+            <img class="logo-img" alt="logo-image" src="images/logo.svg" />
+            <span>Plants</span>
+        </div>
+        <nav>
+            <ul class="link-list">
+                <li class="first-link-text">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="link" href="#about">About us</a>
+                </li>
+                <li>
+                    <a class="link" href="#service">Service</a>
+                </li>
+                <li>
+                    <a class="link" href="#price">Price</a>
+                </li>
+                <li>
+                    <a class="link" href="#contacts">Contacts</a>
+                </li>
+            </ul>
+            <div class="burger-wrap">
+                <button class="img-button" id="burger-button">
+                    <img class="burger-icon" alt="navigation button" src="images/burger.svg" id="open-burger" />
+                    <img class="burger-cross-icon hide-burger" alt="close icon" src="images/close-icon.svg"
+                        id="close-burger" />
+                </button>
+            </div>
+            <div id="menu" class="menu-panel">
+                <ul class="burger-link-list">
+                    <li>
+                        <a class="link" data-menu-link href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a class="link" data-menu-link href="#about">About us</a>
+                    </li>
+                    <li>
+                        <a class="link" data-menu-link href="#service">Service</a>
+                    </li>
+                    <li>
+                        <a class="link" data-menu-link href="#price">Price</a>
+                    </li>
+                    <li>
+                        <a class="link" data-menu-link href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="welcome-section">
+            <img class="leaves" alt="leaves-image" src="images/leaves.png" />
+            <div class="welcome-text-section">
+                <h1 class="welcome-title-text">We grow <span>plants</span> and give you oxygen</h1>
+                <span class="welcome-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</span>
+                <button class="welcome-button button-hover">LEARN MORE</button>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="about-text-section">
+                <h2 class="about-title-text">We are <span>professional experienced</span> gardeners</h2>
+                <span class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make a type specimen book. It has survived not
+                    only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                </span>
+            </div>
+            <img class="plant-image" alt="plant-image" src="images/plant-1.jpg" />
+        </section>
+        <section id="service" class="service-section">
+            <div class="service-title-section">
+                <h2 class="service-title-text">Service and our<br>projects</h2>
+                <div class="service-buttons">
+                    <button class="service-button button-hover" data-selected="false"
+                        id="garden-button">Gardens</button>
+                    <button class="service-button button-hover" data-selected="false" id="lawn-button">Lawn</button>
+                    <button class="service-button button-hover" data-selected="false"
+                        id="plant-button">Planting</button>
+                </div>
+            </div>
+            <div class="service-cards">
+                <div class="service-card" data-blured="false" data-card-type="Gardening">
+                    <img class="service-card-image" alt="Garden-care-image" src="images/planting-1.jpg" />
+                    <span class="cards-title-text">Garden care</span>
+                    <span class="cards-text">Lorem Ipsum has been the industry</span>
+                </div>
+                <div class="service-card" data-blured="false" data-card-type="Planting">
+                    <img class="service-card-image" alt="Garden-care-image" src="images/planting-2.jpg" />
+                    <span class="cards-title-text">Planting</span>
+                    <span class="cards-text">Lorem Ipsum has been the industry</span>
+                </div>
+                <div class="service-card" data-blured="false" data-card-type="Lawn">
+                    <img class="service-card-image" alt="Garden-care-image" src="images/planting-3.jpg" />
+                    <span class="cards-title-text">Lawn care</span>
+                    <span class="cards-text">Lorem Ipsum has been the industry</span>
+                </div>
+                <div class="service-card" data-blured="false" data-card-type="Planting">
+                    <img class="service-card-image" alt="Garden-care-image" src="images/planting-4.jpg" />
+                    <span class="cards-title-text">Planting</span>
+                    <span class="cards-text">Lorem Ipsum has been the industry</span>
+                </div>
+                <div class="service-card" data-blured="false" data-card-type="Gardening" id="garden-button">
+                    <img class="service-card-image" alt="Garden-care-image" src="images/planting-5.jpg" />
+                    <span class="cards-title-text">Garden care</span>
+                    <span class="cards-text">Lorem Ipsum has been the industry</span>
+                </div>
+                <div class="service-card" data-blured="false" data-card-type="Planting">
+                    <img class="service-card-image" alt="Garden-care-image" src="images/planting-6.jpg" />
+                    <span class="cards-title-text">Planting</span>
+                    <span class="cards-text">Lorem Ipsum has been the industry</span>
+                </div>
+            </div>
+        </section>
+        <section id="price" class="prices-section">
+            <div class="price-section-one">
+                <h2 class="prices-title-text">Prices</h2>
+                <div class="price-cards">
+                    <div class="price-card" id="basics-card" data-expanded="false">
+                        <div class="price-card-title">
+                            <span class="prices-text">Basics</span>
+                            <img alt="arrow-image" class="arrow-image-down" src="images/arrow.svg"
+                                id="basics-arrow-down" data-expanded="false" />
+                            <img alt="arrow-image" class="arrow-image-up" src="images/arrow-up.svg" id="basics-arrow-up"
+                                data-expanded="false" />
+                        </div>
+                        <div id="basics-expanded-content" class="price-extra-content" data-expanded="false">
+                            <hr style="width:100%; margin-top:12px;">
+                            <span class="extra-content-text">Release of Letraset sheets containing Lorem Ipsum passages,
+                                and more recently</span>
+                            <span class="extra-content-text2"><span>$15</span> / per hour</span>
+                            <button class="extra-content-button">Order</button>
+                        </div>
+                    </div>
+                    <div class="price-card" id="standard-card" data-expanded="false">
+                        <div class="price-card-title">
+                            <span class="prices-text">Standard</span>
+                            <img alt="arrow-image" class="arrow-image-down" src="images/arrow.svg"
+                                id="standard-arrow-down" data-expanded="false" />
+                            <img alt="arrow-image" class="arrow-image-up" src="images/arrow-up.svg"
+                                id="standard-arrow-up" data-expanded="false" />
+                        </div>
+                        <div id="standard-expanded-content" class="price-extra-content" data-expanded="false">
+                            <hr style="width:100%; margin-top:12px;">
+                            <span class="extra-content-text">Release of Letraset sheets containing Lorem Ipsum passages,
+                                and more recently</span>
+                            <span class="extra-content-text2"><span>$25</span> / per hour</span>
+                            <button class="extra-content-button">Order</button>
+                        </div>
+                    </div>
+
+                    <div class="price-card" id="pro-care-card" data-expanded="false">
+                        <div class="price-card-title">
+                            <span class="prices-text">Pro care</span>
+                            <img alt="arrow-image" class="arrow-image-down" src="images/arrow.svg"
+                                id="pro-care-arrow-down" data-expanded="false" />
+                            <img alt="arrow-image" class="arrow-image-up" src="images/arrow-up.svg"
+                                id="pro-care-arrow-up" data-expanded="false" />
+                        </div>
+                        <div id="pro-care-expanded-content" class="price-extra-content" data-expanded="false">
+                            <hr style="width:100%; margin-top:12px;">
+                            <span class="extra-content-text">Release of Letraset sheets containing Lorem Ipsum passages,
+                                and more recently</span>
+                            <span class="extra-content-text2"><span>$35</span> / per hour</span>
+                            <button class="extra-content-button">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="price-section-two">
+                <h3 class="prices-text-two">Our best <span>gardeners</span> are<br />ready to help you</h3>
+                <button class="price-button button-hover">Contact us</button>
+                <img class="leaves-two" alt="leaves-image" src="images/leaves-two.png" />
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts-section">
+            <h2 class="contacts-title-text">Contact us</h2>
+            <div class="contacts-section-two">
+                <img class="contacts-image" alt="gardener" src="images/gardener.png" />
+                <div class="city-selection" id="city-selection-line" data-opened="false">
+                    <div class="city-selection-title" data-active="false" id="city-selection-title">
+                        <span id="change-city-title" class="city-selection-text">City</span>
+                        <img alt="arrow-image" class="contacts-arrow-image arrow-image-down" src="images/arrow-2.svg"
+                            id="city-selection-arrow-down" data-opened="false" />
+                        <img alt="arrow-image" class="contacts-arrow-image arrow-image-up" src="images/arrow-up.svg"
+                            id="city-selection-arrow-up" data-opened="false" />
+                    </div>
+                    <div class="city-extra-content" id="city-opened-content" data-opened="false">
+                        <ul class="city-list">
+                            <li>
+                                <button data-city="canandaigua" data-selected="false" class="city-buttons">Canandaigua, NY</button>
+                            </li>
+                            <li>
+                                <button data-city="ny" data-selected="false" class="city-buttons">New York City</button>
+                            </li>
+                            <li>
+                                <button data-city="yonkers" data-selected="false" class="city-buttons">Yonkers, NY</button>
+                            </li>
+                            <li>
+                                <button data-city="sherrill" data-selected="false" class="city-buttons">Sherrill, NY</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="city-card" id="city-card" data-opened="false">
+                    <div class="city-card-info">
+                        <div class="city-tamplate">
+                            <span>City:</span>
+                            <span>Phone:</span>
+                            <span>Office adress:</span>
+                        </div>
+                        <div class="city-change-info">
+                            <span id="city-name">City name</span>
+                            <span id="city-phone-number">Phone number</span>
+                            <span id="city-adress">Full adress</span>
+                        </div>
+                    </div>
+                    <a id="city-call-us" class="city-button">Call us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-content">
+        <a class="link" href="https://github.com/AnitaSushko">©
+            <span class="year-margin">2022</span>
+            <span class="github-margin">github</span>
+        </a>
+        <a class="footer-text link" href="https://rs.school/js/">Rolling Scopes School</a>
+        <ul class="contacts-icones">
+            <li>
+                <img alt="instagram icone" src="images/instagram-icone.svg" />
+            </li>
+            <li>
+                <img alt="facebook icone" src="images/facebook-icone.svg" />
+            </li>
+            <li>
+                <img alt="twitter icone" src="images/twitter-icone.svg" />
+            </li>
+            <li>
+                <img alt="pinterest icone" src="images/pinterest-icone.svg" />
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
